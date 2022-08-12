@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="/Assets">
-       
-    </head>
-    <body>
-        <img src="/Assets/HealthPilot.png" alt="Italian Trulli">
-        <button class="button">Video Chat With Us Now!</button>
-        
-        <script src="" async defer></script>
-    </body>
+ <head>
+    <link rel="stylesheet" href="/Assets">
+  <meta charset="UTF-8" />
+  <title>MadisonReed</title>
+  <link
+   href="https://cobrowse.screenmeet.com/CobrowseCore.js"
+   rel="preload"
+   as="script"
+  />
+  <style>
+   body {
+    overflow-x: hidden;
+   }
+   img {
+    max-width: 100%;
+   }
+   button {
+    margin: 8px;
+    color: white;
+    background-color: rgb(235,162,34);
+    position: absolute;
+    right: 100px;
+    width: 200px;
+    height: 50px;
+    border: 3px solid;
+    font-style: bold;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+  </style>
+ </head>
+
+ <body>
+  <div style="height: 100%; position: relative">
+   <img src="./assets/HealthPilot.png" />
+   <script
+    type="text/javascript"
+    async="true"
+    src="https://cobrowse.screenmeet.com/CobrowseBootstrap.js"
+   ></script>
+   <button id="start" type="button" onclick="clickHandler()">
+    Video Chat With Us Now!
+   </button>
+   <script>
+    function clickHandler() {
+     window.Cobrowse.modal.openModal();
+     var x = document.getElementById("start");
+     x.hidden = true;
+    }
+   </script>
+  </div>
+ </body>
 </html>
